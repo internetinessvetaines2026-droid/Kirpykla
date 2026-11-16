@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kirpykla „Pavadinimas“ – Vilnius</title>
+<meta name="description" content="Vyriški kirpimai ir barzdos priežiūra Vilniaus centre. Skambinkite arba ateikite be registracijos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✂️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F0;--ink:#0F2A24;--soft:#DCE7E1;--brass:#8A6422;--red:#B5322D;--blue:#2B5C8F;--line:#BFD0C7;--card:#fff;--btn:#0F2A24;--btn-ink:#F4EFE0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1F1A;--ink:#EDE8D8;--soft:#12302A;--brass:#D2A862;--red:#D8504A;--blue:#5B8FC4;--line:#25463E;--card:#103029;--btn:#D2A862;--btn-ink:#0B1F1A}}
+:root[data-theme="dark"]{--bg:#0B1F1A;--ink:#EDE8D8;--soft:#12302A;--brass:#D2A862;--red:#D8504A;--blue:#5B8FC4;--line:#25463E;--card:#103029;--btn:#D2A862;--btn-ink:#0B1F1A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Work Sans",system-ui,sans-serif;padding-bottom:84px}
+h1,h2,h3{font-family:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;margin:0;line-height:.95;letter-spacing:.01em}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--btn);color:var(--btn-ink);font-weight:600;text-decoration:none;padding:16px 28px;border-radius:6px;border:2px solid var(--btn)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:52px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1fr 92px;gap:26px;align-items:stretch}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1.5px solid var(--line);border-radius:99px;font-size:15px;font-weight:500;background:var(--card)}
+.dot{width:10px;height:10px;border-radius:50%;background:#999}
+.status.open .dot{background:#2E9B5F;box-shadow:0 0 0 4px rgba(46,155,95,.25)}
+.status.closed .dot{background:var(--red)}
+h1{font-size:clamp(64px,17vw,148px);font-weight:900;margin:22px 0 18px}
+h1 span{display:block;color:var(--brass)}
+.lead{max-width:30ch;font-size:20px;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.pole{position:relative;border-radius:46px;border:3px solid var(--ink);overflow:hidden;min-height:340px;
+background:repeating-linear-gradient(135deg,var(--red) 0 22px,#F4EFE0 22px 44px,var(--blue) 44px 66px,#F4EFE0 66px 88px);background-size:124px 124px;animation:spin 3.5s linear infinite}
+.pole::before,.pole::after{content:"";position:absolute;left:0;right:0;height:26px;background:var(--brass);z-index:1}
+.pole::before{top:0}.pole::after{bottom:0}
+@keyframes spin{to{background-position:0 124px}}
+@media (prefers-reduced-motion:reduce){.pole{animation:none}}
+
+/* sections */
+section{padding:60px 0;border-top:1.5px solid var(--line)}
+h2{font-size:clamp(40px,9vw,64px);font-weight:900;margin-bottom:8px}
+.sub{margin:0 0 30px;max-width:46ch;opacity:.85}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:18px 0;border-bottom:1.5px dashed var(--line)}
+.menu b{font-size:19px;font-weight:600}
+.menu em{font-style:normal;font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:34px;color:var(--brass);line-height:1}
+.menu small{grid-column:1;opacity:.75;font-size:15px}
+.why{display:grid;gap:16px}
+.why div{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:24px}
+.why h3{font-size:30px;margin-bottom:8px}
+.why p{margin:0;opacity:.85}
+.band{background:var(--soft)}
+.band .box{display:flex;flex-direction:column;gap:20px}
+.hours{width:100%;border-collapse:collapse;max-width:460px}
+.hours td{padding:12px 0;border-bottom:1.5px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--brass);font-weight:600}
+.loc{display:grid;gap:26px}
+.addr{font-size:22px;font-weight:500;margin:0 0 6px}
+footer{padding:36px 0 20px;font-size:14px;opacity:.7}
+
+/* sticky call bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1.5px solid var(--line)}
+.bar .btn{flex:1;padding:14px 10px}
+
+@media (min-width:760px){
+ .hero .wrap{grid-template-columns:1fr 130px}
+ .why{grid-template-columns:repeat(3,1fr)}
+ .loc{grid-template-columns:1fr 1fr}
+ .band .box{flex-direction:row;justify-content:space-between;align-items:center}
+ body{padding-bottom:0}.bar{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status" id="status"><span class="dot"></span><span id="stext">Tikriname darbo laiką…</span></span>
+      <h1>Kirpykla<span>Pavadinimas</span></h1>
+      <p class="lead">Vyriški kirpimai ir barzdos priežiūra Vilniaus centre. Ateikite be registracijos arba paskambinkite.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+37060000000">Skambinti +370 600 00000</a>
+        <a class="btn ghost" href="#kainos">Žiūrėti kainas</a>
+      </div>
+    </div>
+    <div class="pole" aria-hidden="true"></div>
+  </div>
+</header>
+
+<section id="kainos">
+  <div class="wrap">
+    <h2>Paslaugos ir kainos</h2>
+    <p class="sub">Kainos aiškios iš anksto, jokių priedų prie sąskaitos.</p>
+    <ul class="menu">
+      <li><b>Vyriškas kirpimas</b><em>15 €</em><small>Plovimas, kirpimas, formavimas, apie 40 min.</small></li>
+      <li><b>Kirpimas mašinėle</b><em>10 €</em><small>Vienodas ilgis arba laipsniškas perėjimas, apie 20 min.</small></li>
+      <li><b>Barzdos formavimas</b><em>10 €</em><small>Kontūrai, trumpinimas, karštas rankšluostis, apie 25 min.</small></li>
+      <li><b>Kirpimas + barzda</b><em>22 €</em><small>Pilnas paketas, sutaupote 3 €, apie 60 min.</small></li>
+      <li><b>Vaikų kirpimas (iki 12 m.)</b><em>12 €</em><small>Kantriai ir be ašarų, apie 25 min.</small></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Kodėl pas mus</h2>
+    <p class="sub">Trys dalykai, dėl kurių klientai grįžta.</p>
+    <div class="why">
+      <div><h3>Be eilių</h3><p>Dirbame su išankstine registracija ir su atėjusiais iš gatvės, todėl laukti ilgai nereikės.</p></div>
+      <div><h3>Švara ir įrankiai</h3><p>Kiekvienam klientui švarūs įrankiai ir šviežias rankšluostis.</p></div>
+      <div><h3>Centre, šalia stotelės</h3><p>Lengva rasti, lengva pasiekti viešuoju transportu, šalia yra mokama stovėjimo aikštelė.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap box">
+    <div>
+      <h2>Ateikite šiandien</h2>
+      <p class="sub" style="margin:0">Paskambinkite ir sužinokite, ar yra laisvas laikas per artimiausią valandą.</p>
+    </div>
+    <a class="btn" href="tel:+37060000000">Skambinti dabar</a>
+  </div>
+</section>
+
+<section id="laikas">
+  <div class="wrap loc">
+    <div>
+      <h2>Darbo laikas</h2>
+      <table class="hours" aria-label="Darbo laikas">
+        <tr data-d="1"><td>Pirmadienis</td><td>9:00–19:00</td></tr>
+        <tr data-d="2"><td>Antradienis</td><td>9:00–19:00</td></tr>
+        <tr data-d="3"><td>Trečiadienis</td><td>9:00–19:00</td></tr>
+        <tr data-d="4"><td>Ketvirtadienis</td><td>9:00–19:00</td></tr>
+        <tr data-d="5"><td>Penktadienis</td><td>9:00–19:00</td></tr>
+        <tr data-d="6"><td>Šeštadienis</td><td>10:00–17:00</td></tr>
+        <tr data-d="0"><td>Sekmadienis</td><td>uždaryta</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Kur mus rasti</h2>
+      <p class="addr">Gedimino pr. 00, Vilnius</p>
+      <p class="sub">Įėjimas iš kiemo, antras aukštas.</p>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Gedimino+pr.+Vilnius">Atidaryti žemėlapyje</a>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">© Kirpykla „Pavadinimas“, Vilnius. Svetainę sukūrė Jūsų vietinis kūrėjas.</footer>
+
+<div class="bar">
+  <a class="btn" href="tel:+37060000000">Skambinti</a>
+  <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Gedimino+pr.+Vilnius">Kaip atvykti</a>
+</div>
+
+<script>
+(function(){
+  var H={0:null,1:[9,19],2:[9,19],3:[9,19],4:[9,19],5:[9,19],6:[10,17]};
+  var now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+  var row=document.querySelector('tr[data-d="'+d+'"]');
+  if(row)row.className="today";
+  var s=document.getElementById("status"),t=document.getElementById("stext"),w=H[d];
+  if(w&&h>=w[0]&&h<w[1]){s.className="status open";t.textContent="Dabar atidaryta iki "+w[1]+":00";}
+  else{s.className="status closed";t.textContent="Dabar uždaryta";}
+})();
+</script>
+</body>
+</html>
